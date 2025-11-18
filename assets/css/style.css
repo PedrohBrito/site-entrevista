@@ -15,13 +15,99 @@ html,body{height:100%}
 body{
     margin:0;
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(180deg, #0f2a7c 0%, var(--bg) 100%);
+    background: linear-gradient(180deg, #546aac 0%, var(--bg) 100%);
     color:var(--text);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     line-height:1.6;
     padding:2px;
 }
+
+    /* Importante: para replicar o fundo da imagem, você precisará de uma imagem de fundo real. */
+    .cabecalho-projeto {
+        background-image: url('../img/foto-trabalho-ti.jpg'); 
+        background-color: #b80000; /* Cor de fallback se a imagem não carregar */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative; /* Para garantir que o z-index funcione se necessário */
+    }
+
+    .cabecalho-projeto h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: normal;
+        /* Para o efeito de sombra do texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .cabecalho-projeto p {
+        margin-top: 5px;
+        font-size: 1.1em;
+        /* Para o efeito de sombra do texto */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* --- Estilos da Barra de Navegação (O Menu Principal) --- */
+
+    .menu-navegacao {
+        background-color: #79aeebfb; /* A cor vermelha/rosa vibrante da barra */
+        padding: 10px 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sombra suave abaixo da barra */
+    }
+
+    .menu-navegacao ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center; /* Centraliza horizontalmente todos os botões */
+    }
+
+    .menu-navegacao li {
+        display: inline-block; /* Coloca os itens lado a lado */
+        margin: 0 5px; /* Espaçamento entre os botões */
+    }
+
+    .menu-navegacao a {
+        text-decoration: none;
+        color: #333; /* Cor do texto padrão */
+        padding: 8px 15px;
+        display: block;
+        border-radius: 5px; /* Cantos arredondados dos botões */
+        font-weight: bold;
+        white-space: nowrap; /* Evita quebras de linha dentro do botão */
+        transition: background-color 0.2s, color 0.2s;
+        /* Ajuste do tamanho da fonte para o visual da imagem */
+        font-size: 0.95em;
+    }
+
+    /* Estilo para o Botão ATIVO/Selecionado 
+       (O botão 'Home' na imagem, que é mais claro e tem a cor diferente)
+    */
+    .menu-navegacao .ativo a {
+        background-color: #fce8e8; /* Cor mais clara para o item ativo */
+        color: #1d2157; /* Cor do texto pode ser a cor da barra */
+    }
+
+    /* Efeito de Hover (Ao passar o mouse, simula o estado ativo) */
+    .menu-navegacao a:hover:not(.ativo a) {
+        background-color: #25358f; /* Uma cor intermediária para o hover */
+        color: white;
+    }
+
+    /* Estilo do container de conteúdo abaixo */
+    .container-conteudo {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 900px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        min-height: 500px;
+    }
+
 
 /* Container para centralizar conteúdo */
 .container{
@@ -156,7 +242,7 @@ hr{
 /* cada coluna tem largura flexível, com limite mínimo para não quebrar o layout */
 .rodape-col{
     flex: 1 1 220px;
-    min-width: 180px;
+    min-width: 170px;
     overflow: hidden; /* evita que conteúdo muito longo aumente a altura do rodapé */
 }
 
@@ -191,12 +277,11 @@ hr{
 /* contatos e redes mais compactos */
 .rodape-redes a{ color: inherit; margin-right: 8px; font-size: 0.92rem; }
 
-/* linha legal e botões */
 .rodape-legal{
     max-width: 1100px;
     margin: 0 auto;
     padding-top: 12px;
-    border-top: 1px solid rgba(0,0,0,0.03);
+    border-top: 1px solid rgba(2, 2, 2, 0.03);
     display: flex;
     gap: 12px;
     align-items: center;
