@@ -5,43 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrevista | Eleutério Cunha</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/img/icone-site.jpg">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 
 <body>
 
     <header class="cabecalho">
-    <nav class="menu-navegacao">
-  <ul>
-    <li><a href="../index.html"><span role="img" aria-label="Home">🏠</span> Home</a></li>
-    <li class="active">
-      <a href="../pages/sobre.html">
-        Sobre o Entrevistado
-        <span role="img" aria-label="Pessoa" class="nav-icon">👤</span>
-      </a>
-    </li>
-    <li><a href="../pages/contato.html"><span role="img" aria-label="Globo">🌐</span> Entrevista Completa</a></li>
-  </ul>
-</nav>
-</header>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="../index.html"><span role="img" aria-label="Home">🏠</span> Home</a></li>
+
+                <li class="active">
+                    <a href="../pages/sobre.html">
+                        Sobre o Entrevistado
+                        <span role="img" aria-label="Pessoa" class="nav-icon">👤</span>
+                    </a>
+                </li>
+
+                <li><a href="../pages/contato.html">
+                    <span role="img" aria-label="Globo">🌐</span> Entrevista Completa
+                </a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container artigo-entrevista">
 
-       <article>
-            <h1 class="titulo-entrevista">Em TI, cada linha de       código é uma chance de criar o futuro.</h1>
+        <article>
+            <h1 class="titulo-entrevista">Em TI, cada linha de código é uma chance de criar o futuro.</h1>
             <hr>
 
             <section class="entrevistado-info">
                 <img src="../assets/img/foto-profissional.jpg" alt="Foto de Eleutério Cunha">
-                <p>Eleutério Cunha tem 52 anos e atua como Analista de Negócios na área de TI. Desde a adolescência, seu
-                    interesse em montar computadores o levou à carreira, focando na gestão. Atualmente, ele trabalhou na
-                    Gol Linhas Aéreas. Esta entrevista visa inspirar jovens a escolherem sua profissão
-                    no futuro.</p>
+                <p>Eleutério Cunha tem 52 anos e atua como Analista de Negócios na área de TI. Desde a adolescência, seu interesse em montar computadores o levou à carreira, focando na gestão. Atualmente, ele trabalhou na Gol Linhas Aéreas. Esta entrevista visa inspirar jovens a escolherem sua profissão no futuro.</p>
             </section>
 
             <hr style="clear: both;">
-
 
             <hr>
 
@@ -50,37 +51,42 @@
     </main>
 
     <footer class="rodape" role="contentinfo">
-    <div class="rodape-conteudo">
-        <div class="rodape-col">
-            <h4>Contato</h4>
-            <p>Email: <a href="mailto:contato@entrevistaja.example">pedro.h.cunha16@aluno.senai.br</a></p>
-            <p>Telefone: <a href="tel:+5511999999999">+55 (19) 99953-4413</a></p>
-            <div class="rodape-redes">
-                <a href="https://www.instagram.com/_phbritoo/" aria-label="Instagram">Instagram</a> ·
-                <a href="https://www.linkedin.com/in/pedrobritocunha/" aria-label="LinkedIn">LinkedIn</a> . 
-                <a href="https://github.com/PedrohBrito" aria-label="GitHub">GitHub</a>
+        <div class="rodape-conteudo">
+            <div class="rodape-col">
+                <h4>Contato</h4>
+                <p>Email: <a href="mailto:contato@entrevistaja.example">pedro.h.cunha16@aluno.senai.br</a></p>
+                <p>Telefone: <a href="tel:+5511999999999">+55 (19) 99953-4413</a></p>
+
+                <div class="rodape-redes">
+                    <a href="https://www.instagram.com/_phbritoo/" aria-label="Instagram">Instagram</a> ·
+                    <a href="https://www.linkedin.com/in/pedrobritocunha/" aria-label="LinkedIn">LinkedIn</a> ·
+                    <a href="https://github.com/PedrohBrito" aria-label="GitHub">GitHub</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="rodape-legal">
-        <p>&copy; Outubro de 2025 | Todos os direitos reservados.</p>
-        <nav aria-label="Informações legais">
-            <a href="">Política de Privacidade</a> · <a href="">Termos de Uso</a>
-        </nav>
-        <button type="button" class="btn-voltar-topo" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-            Voltar ao topo
-        </button>
-    </div>
-</footer>
-<script>
-    // Pequeno ajuste: adiciona foco ao topo após rolagem para melhor acessibilidade
-    document.querySelectorAll('.btn-voltar-topo').forEach(btn => {
-        btn.addEventListener('click', () => {
-            setTimeout(() => { document.querySelector('header')?.focus?.(); }, 600);
+        <div class="rodape-legal">
+            <p>&copy; Outubro de 2025 | Todos os direitos reservados.</p>
+            <nav aria-label="Informações legais">
+                <a href="">Política de Privacidade</a> · <a href="">Termos de Uso</a>
+            </nav>
+
+            <button type="button" class="btn-voltar-topo" aria-label="Voltar ao topo"
+                onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                Voltar ao topo
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn-voltar-topo').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(() => {
+                    document.querySelector('header')?.focus?.();
+                }, 600);
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 
