@@ -15,10 +15,8 @@ html,body{height:100%}
 body{
     margin:0;
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(180deg, #546aac 0%, var(--bg) 100%);
+    background:180deg, #546aac 0%, var(--bg) 100%;
     color:var(--text);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
     line-height:1.6;
     padding:2px;
 }
@@ -217,16 +215,17 @@ hr{
     border-radius:var(--radius);
     margin-bottom:28px;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
 }
 
 .rodape{
-    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-    color: #1f2937;
+    background: black;
+    color: #ffffff;
     padding: 20px;
     border-top: 1px solid rgba(0,0,0,0.04);
     font-size: 0.95rem;
+
 }
 
 .rodape-conteudo{
@@ -253,7 +252,7 @@ hr{
 }
 .rodape-descricao{
     margin: 0;
-    color: #475569;
+    color: #f8f8f8;
     line-height: 1.4;
     font-size: 0.92rem;
 }
@@ -272,7 +271,7 @@ hr{
     transition: color .15s ease, opacity .15s ease;
     font-size: 0.92rem;
 }
-.rodape-links a:hover{ text-decoration: underline; opacity: 1; }
+
 
 /* contatos e redes mais compactos */
 .rodape-redes a{ color: inherit; margin-right: 8px; font-size: 0.92rem; }
@@ -287,7 +286,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: #6b7280;
+    color: #464a52;
     font-size: 0.85rem;
 }
 
@@ -316,4 +315,38 @@ hr{
     }
     .rodape-legal nav{ width: 100%; margin-top: 6px; }
     .btn-voltar-topo{ margin-top: 8px; }
+}
+
+.pergunta-resposta {
+    margin-bottom: 25px;
+    border-left: 4px solid #004a91;
+    padding-left: 15px;
+}
+
+.pergunta-resposta strong{
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pergunta-resposta p{
+    margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav .active a {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid #000;
 }

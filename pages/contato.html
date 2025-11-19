@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>entrevista | Eleutério</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Entrevista com o Analista de Negócios</h1>
-        <p>Eleutério Cunha - Área: TI (Tecnologia da Informação)</p>
+
+  <nav class="menu-navegacao">
+  <ul>
+    <li><a href="../index.html"><span role="img" aria-label="Home">🏠</span> Home</a></li>
+    <li><a href="../pages/sobre.html">Sobre o Entrevistado <span role="img" aria-label="Pessoa" class="nav-icon">👤</span></a></li>
+    <li class="active">
+      <a href="../pages/contato.html">
+        Entrevista Completa
+        <span role="img" aria-label="Globo" class="nav-icon">🌐</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+        
     </header>
 
     <div class="container">
+
+    <h1>Entrevista com o Analista de Negócios</h1>
+        <p>Eleutério Cunha - Área: TI (Tecnologia da Informação)</p>
+
         <div class="pergunta-resposta">
             <p class="pergunta">1. Por que escolheu essa profissão?</p>
             <p class="resposta">Porque eu sempre me dei bem com computadores, principalmente na montagem deles. Então na faculdade eu cursei TI e me identifiquei com essa área. </p>
@@ -92,5 +109,38 @@
             <p class="resposta">As etapas para chegar onde cheguei é o estágio, o técnico, o analista e só depois o especialista. </p>
         </div>
     </div>
+ <footer class="rodape" role="contentinfo">
+    <div class="rodape-conteudo">
+        <div class="rodape-col">
+            <h4>Contato</h4>
+            <p>Email: <a href="mailto:contato@entrevistaja.example">pedro.h.cunha16@aluno.senai.br</a></p>
+            <p>Telefone: <a href="tel:+5511999999999">+55 (19) 99953-4413</a></p>
+            <div class="rodape-redes">
+                <a href="https://www.instagram.com/_phbritoo/" aria-label="Instagram">Instagram</a> ·
+                <a href="https://www.linkedin.com/in/pedrobritocunha/" aria-label="LinkedIn">LinkedIn</a> . 
+                <a href="https://github.com/PedrohBrito" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape-legal">
+        <p>&copy; Outubro de 2025 | Todos os direitos reservados.</p>
+        <nav aria-label="Informações legais">
+            <a href="">Política de Privacidade</a> · <a href="">Termos de Uso</a>
+        </nav>
+        <button type="button" class="btn-voltar-topo" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            Voltar ao topo
+        </button>
+    </div>
+</footer>
+<script>
+    // Pequeno ajuste: adiciona foco ao topo após rolagem para melhor acessibilidade
+    document.querySelectorAll('.btn-voltar-topo').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setTimeout(() => { document.querySelector('header')?.focus?.(); }, 600);
+        });
+    });
+</script>
+
 </body>
 </html>
